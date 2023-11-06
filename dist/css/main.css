@@ -1,0 +1,237 @@
+.container {
+  max-width: 1280px;
+  padding: 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+h1 {
+  font-size: 5rem;
+  color: white; }
+
+h2,
+h3,
+h4,
+p {
+  color: white; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px; }
+
+body {
+  font-family: "Voltaire", sans-serif;
+  line-height: 1.6;
+  background: white; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Paytone One", sans-serif; }
+
+img {
+  width: 100%; }
+
+#navbar {
+  background: white;
+  color: #d85b26;
+  top: 0; }
+  #navbar .navbar-content {
+    width: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #navbar .navbar-content #logo {
+      width: 70px;
+      padding: 5px; }
+  #navbar .navbar-link ul {
+    display: flex; }
+    #navbar .navbar-link ul li {
+      padding: 1rem 2rem;
+      display: inline-block; }
+      #navbar .navbar-link ul li a {
+        font-family: "Acme", sans-serif;
+        color: #d85b26;
+        transition: color;
+        font-size: 1.2rem; }
+        #navbar .navbar-link ul li a:hover {
+          color: #eabf3a; }
+
+#home-1 {
+  background: url(../img/Grupp.jpg) no-repeat center center/cover;
+  height: 120vh; }
+  #home-1 * {
+    z-index: 2; }
+  #home-1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    background: rgba(0, 0, 0, 0.1); }
+  #home-1 .content {
+    display: flex;
+    align-items: end;
+    height: 120vh;
+    color: white; }
+    #home-1 .content h1 {
+      font-size: 8rem;
+      padding-bottom: 10rem; }
+
+#home-2 {
+  background: #d85b26; }
+  #home-2 .content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem; }
+    #home-2 .content .fantasi,
+    #home-2 .content .ballader,
+    #home-2 .content .quiz {
+      text-align: center;
+      padding: 0 2rem; }
+    #home-2 .content a {
+      color: white; }
+      #home-2 .content a img {
+        width: 300px;
+        padding: 0.5rem;
+        background: white; }
+      #home-2 .content a h2 {
+        font-size: 1.2rem;
+        font-family: "Acme", sans-serif; }
+      #home-2 .content a p {
+        font-size: 0.8rem; }
+
+#home-3 {
+  background: #eabf3a;
+  text-align: center; }
+
+#home-4 {
+  background: #d85b26;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  #home-4 .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2rem; }
+    #home-4 .content .person {
+      padding: 1rem 2rem; }
+  #home-4 h2 {
+    font-size: 1.5rem;
+    font-family: "Acme", sans-serif; }
+
+#home-5 {
+  background: #eabf3a;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  #home-5 h2 {
+    color: #9c020c;
+    font-family: "Acme", sans-serif;
+    font-size: 2rem; }
+  #home-5 ul {
+    align-items: center;
+    justify-content: center;
+    display: flex; }
+    #home-5 ul li {
+      padding: 1rem 2rem; }
+      #home-5 ul li i {
+        color: #9c020c; }
+
+#lasmer-1 {
+  background-color: #d85b26;
+  display: flex;
+  text-align: center; }
+  #lasmer-1 h1 {
+    font-size: 3rem; }
+  #lasmer-1 img {
+    width: 300px;
+    padding: 0.5rem;
+    background: white; }
+
+#lasmer-2 {
+  background-color: #eabf3a;
+  display: flex;
+  text-align: center; }
+  #lasmer-2 h1 {
+    font-size: 3rem; }
+  #lasmer-2 img {
+    width: 300px;
+    padding: 0.5rem;
+    background: white; }
+
+#lasmer-3 {
+  background-color: #9c020c;
+  display: flex;
+  text-align: center; }
+  #lasmer-3 h1 {
+    font-size: 3rem; }
+  #lasmer-3 img {
+    width: 300px;
+    padding: 0.5rem;
+    background: white; }
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3rem; }
+  #navbar .navbar-content #logo {
+    width: 50px; }
+  #navbar .navbar-link ul li {
+    padding: 0.8rem 1rem; }
+    #navbar .navbar-link ul li a {
+      font-size: 0.8rem; }
+  #home-1 .content h1 {
+    font-size: 5rem; }
+  #home-2 .content a img {
+    width: 200px; } }
+
+@media (max-width: 500px) {
+  #navbar .navbar-content {
+    flex-direction: column;
+    align-items: center; }
+    #navbar .navbar-content #logo {
+      width: 70px; }
+  #navbar .navbar-link ul li {
+    padding: 0.4rem 0.2rem;
+    line-height: 0.8; }
+    #navbar .navbar-link ul li a {
+      font-size: 0.8rem; }
+  #home-1 {
+    height: 50vh; }
+    #home-1::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 50vh;
+      background: rgba(0, 0, 0, 0.1); }
+    #home-1 .content {
+      height: 60vh; }
+      #home-1 .content h1 {
+        font-size: 2rem; }
+  #home-2 .content {
+    flex-direction: column;
+    padding-top: 1rem; }
+    #home-2 .content .fantasi,
+    #home-2 .content .ballader,
+    #home-2 .content .quiz {
+      text-align: center;
+      padding: 1rem 2rem; }
+  #home-4 .content {
+    display: flex;
+    flex-direction: column; }
+  #home-5 h2 {
+    font-size: 1.4rem; }
+  #lasmer-1 h1 {
+    font-size: 2rem; }
+  #lasmer-2 h1 {
+    font-size: 2rem; }
+  #lasmer-3 h1 {
+    font-size: 2rem; } }

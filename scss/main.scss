@@ -1,0 +1,249 @@
+@import "config";
+@import "utilities";
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Voltaire", sans-serif;
+  line-height: 1.6;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $head-font;
+}
+
+img {
+  width: 100%;
+}
+
+// Navbar
+#navbar {
+  background: white;
+  color: $orange;
+  top: 0;
+  .navbar {
+    &-content {
+      width: calc(100% - 10px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      #logo {
+        width: 70px;
+        padding: 5px;
+      }
+    }
+
+    &-link {
+      ul {
+        display: flex;
+        li {
+          padding: 1rem 2rem;
+          display: inline-block;
+
+          a {
+            font-family: $special-font;
+            color: $orange;
+            transition: color;
+            font-size: 1.2rem;
+
+            &:hover {
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Home
+#home {
+  &-1 {
+    background: url(../img/Grupp.jpg) no-repeat center center / cover;
+    height: 120vh;
+
+    * {
+      z-index: 2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 120vh;
+      background: rgba($color: #000000, $alpha: 0.1);
+    }
+
+    .content {
+      display: flex;
+      align-items: end;
+      height: 120vh;
+      color: white;
+
+      h1 {
+        font-size: 8rem;
+        padding-bottom: 10rem;
+      }
+    }
+  }
+
+  // Föreställningar
+  &-2 {
+    background: $orange;
+
+    .content {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding-top: 2rem;
+
+      .fantasi,
+      .ballader,
+      .quiz {
+        text-align: center;
+        padding: 0 2rem;
+      }
+
+      a {
+        color: white;
+
+        img {
+          width: 300px;
+          padding: 0.5rem;
+          background: white;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+          font-family: $special-font;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  &-3 {
+    background: $yellow;
+    text-align: center;
+  }
+
+  &-4 {
+    background: $orange;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 2rem;
+
+      .person {
+        padding: 1rem 2rem;
+      }
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-family: $special-font;
+    }
+  }
+
+  &-5 {
+    background: $yellow;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+      color: $red;
+      font-family: $special-font;
+      font-size: 2rem;
+    }
+
+    ul {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      li {
+        padding: 1rem 2rem;
+        i {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+#lasmer {
+  &-1 {
+    background-color: $orange;
+    display: flex;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    img {
+      width: 300px;
+      padding: 0.5rem;
+      background: white;
+    }
+  }
+
+  &-2 {
+    background-color: $yellow;
+    display: flex;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    img {
+      width: 300px;
+      padding: 0.5rem;
+      background: white;
+    }
+  }
+
+  &-3 {
+    background-color: $red;
+    display: flex;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    img {
+      width: 300px;
+      padding: 0.5rem;
+      background: white;
+    }
+  }
+}
+
+// Import Media Queries
+@import "media";

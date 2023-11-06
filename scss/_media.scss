@@ -1,0 +1,142 @@
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #navbar {
+    .navbar {
+      &-content {
+        #logo {
+          width: 50px;
+        }
+      }
+
+      &-link {
+        ul {
+          li {
+            padding: 0.8rem 1rem;
+
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #home {
+    &-1 {
+      .content {
+        h1 {
+          font-size: 5rem;
+        }
+      }
+    }
+
+    &-2 {
+      .content {
+        a {
+          img {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    .navbar {
+      &-content {
+        flex-direction: column;
+        align-items: center;
+
+        #logo {
+          width: 70px;
+        }
+      }
+
+      &-link {
+        ul {
+          li {
+            padding: 0.4rem 0.2rem;
+            line-height: 0.8;
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #home {
+    &-1 {
+      height: 50vh;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        background: rgba($color: #000000, $alpha: 0.1);
+      }
+
+      .content {
+        height: 60vh;
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &-2 {
+      .content {
+        flex-direction: column;
+        padding-top: 1rem;
+
+        .fantasi,
+        .ballader,
+        .quiz {
+          text-align: center;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+
+    &-4 {
+      .content {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-5 {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  #lasmer {
+    &-1 {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    &-2 {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    &-3 {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
