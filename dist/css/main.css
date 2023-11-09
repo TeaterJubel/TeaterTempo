@@ -156,6 +156,8 @@ img {
     width: 300px;
     padding: 0.5rem;
     background: white; }
+  #lasmer-1 iframe {
+    margin-top: 1rem; }
 
 #lasmer-2 {
   background-color: #eabf3a;
@@ -231,6 +233,9 @@ img {
     font-size: 1.4rem; }
   #lasmer-1 h1 {
     font-size: 2rem; }
+  #lasmer-1 iframe {
+    width: 300px;
+    height: 188.75px; }
   #lasmer-2 h1 {
     font-size: 2rem; }
   #lasmer-3 h1 {
